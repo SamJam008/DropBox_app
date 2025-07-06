@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "set NEXT_IGNORE_ESLINT_ERRORS=1 && drizzle-kit generate && next build",
+    "build": " cross-env NEXT_IGNORE_ESLINT_ERRORS=1 && drizzle-kit generate && next build",
     "start": "next start",
     "lint": "next lint",
     "db:push": "drizzle-kit push",
@@ -52,6 +52,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
