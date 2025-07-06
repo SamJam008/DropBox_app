@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "drizzle-kit generate && next build",
     "start": "next start",
     "lint": "next lint",
     "db:push": "drizzle-kit push",
@@ -31,6 +31,8 @@
     "@heroui/tooltip": "^2.2.19",
     "@hookform/resolvers": "^5.1.1",
     "@imagekit/next": "^2.1.2",
+    "@neondatabase/serverless": "^1.0.1",
+    "drizzle-orm": "^0.44.2",
     "framer-motion": "^12.23.0",
     "imagekit": "^6.0.0",
     "imagekitio-next": "^1.0.1",
