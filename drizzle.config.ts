@@ -1,3 +1,4 @@
+
 import * as dotenv from "dotenv"
 import { defineConfig } from 'drizzle-kit';
 
@@ -19,4 +20,8 @@ export default defineConfig({
     verbose: true,
     strict: true,
 });
+
+
+
+
 

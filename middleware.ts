@@ -1,3 +1,4 @@
+
 import { clerkMiddleware, createRouteMatcher, auth } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 import { isAbsolute } from 'node:path/posix'
