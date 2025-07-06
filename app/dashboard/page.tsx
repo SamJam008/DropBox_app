@@ -1,8 +1,8 @@
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-//import DashboardContent from "@/components/DashboardContent";
-//import { CloudUpload } from "lucide-react";
-//import Navbar from "@/components/Navbar";
+import DashboardContent from "@/components/DashboardContent";
+import { CloudUpload } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 export default async function Dashboard() {
   const { userId } = await auth();
@@ -15,13 +15,13 @@ export default async function Dashboard() {
   // Serialize the user data to avoid passing the Clerk User object directly
   const serializedUser = user
     ? {
-        id: user.id,
-        firstName: user.firstName,
-        lastName: user.lastName,
-        imageUrl: user.imageUrl,
-        username: user.username,
-        emailAddress: user.emailAddresses?.[0]?.emailAddress,
-      }
+      id: user.id,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      imageUrl: user.imageUrl,
+      username: user.username,
+      emailAddress: user.emailAddresses?.[0]?.emailAddress,
+    }
     : null;
 
   return (
