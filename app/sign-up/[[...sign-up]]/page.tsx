@@ -1,3 +1,4 @@
+"use cllient"
 import SignUpForm from "@/components/SignUpForm";
 import { CloudUpload } from "lucide-react";
 import Link from "next/link";

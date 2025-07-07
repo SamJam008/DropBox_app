@@ -1,3 +1,4 @@
+"use client"
 import SignInForm from "@/components/SignInForm";
 import { CloudUpload } from "lucide-react";
 import Link from "next/link";
