@@ -1,5 +1,5 @@
 import * as z from "zod"
-
+//zod is a ts validation library
 export const signInSchema = z.object({
     identifier: z
         .string()
@@ -14,4 +14,8 @@ export const signInSchema = z.object({
         .string()
         .min(1, { message: "Please confirm your password" })
 
+}).refine((data)=> data.password === data.passwordConfirmation,{
+    message: "Passwords do no match",
+    path: ["passwordConfirmation"],// tells zod where to show the error
 })
+//export type file=  z.infer<typeof signInSchema>

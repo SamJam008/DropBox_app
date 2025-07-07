@@ -8,5 +8,5 @@ if (!process.env.DATABASE_URL) {
 const sql = neon(process.env.DATABASE_URL!)// reads env variables for database string..! I am sure this value is defined
 export const db = drizzle(sql, { schema })// via drizzle
 
-export { sql } ;// raw sql client, queries
+export { sql } ; // raw sql client, queries
 
