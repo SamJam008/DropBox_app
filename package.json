@@ -33,6 +33,7 @@
     "@imagekit/next": "^2.1.2",
     "@isaacs/fs-minipass": "^4.0.1",
     "@neondatabase/serverless": "^1.0.1",
+    "dotenv": "^17.2.0",
     "drizzle-orm": "^0.44.2",
     "framer-motion": "^12.23.0",
     "imagekit": "^6.0.0",
