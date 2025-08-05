@@ -1,7 +1,3 @@
-Here’s a **clean, professional README** for your Dropbox-like Next.js app:
-
----
-
 # Droply – Cloud Storage Web Application
 
 Droply is a modern cloud storage web application inspired by Dropbox, built using **Next.js 15**, **TypeScript**, **Clerk authentication**, **ImageKit** for file storage, and **PostgreSQL (Neon)** for database management. It allows users to securely upload, manage, and access their files from anywhere.
